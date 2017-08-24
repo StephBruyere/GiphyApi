@@ -3,46 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Puppie gif library">
-    <meta name="keywords" content="Puppies, fuzzy, cute, sloths">
+    <meta name="description" content="Sloath Gif library">
+    <meta name="keywords" content="Fuzzy, cute, sloths">
     <!-- Mobile Responsive Viewport info-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap stylesheet-->
     <!-- 3.3.7 compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati|Modak" rel="stylesheet">
     <!--Native Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!--Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Orbitron|Righteous|Russo+One" rel="stylesheet">
+    <!--Ajax stylesheet -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>ZOMG Zomg!</title>
+    <!--Title -->
+    <title>ZOMG Sloths!</title>
 </head>
 
-
 <body>
-  <div class="container">
-    <h1>ZOMG, Sloth!</h1>
-    <!-- Movies will Get Dumped Dere -->
-    <div id="animal-gifs"></div>
-    <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
-    <form id="animal-form">
-      <label for="animal-input">Search for Sloths</label>
-      <input type="text" id="animal-input"><br>
-      <!-- Button triggers new movie to be added -->
-      <input id="add-animal" type="submit" value="Search">
-    </form>
+    <!--Nav Bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><img class="img-fluid rounded" src="assets/css/images/sloth.png" width="50px" alt=""></a>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <h3> ZOMG Sloths!</h3></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.slothville.com/what-is-a-sloth/#.WZo-0VGGOM8">Sloth Appreciation Society</a></li>
+                    <li><a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE1707OQ18299A01409RX&_ga=2.1478450.2006124926.1503271467-728252115.1503271467">Donate to Sloths</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=7zbHQ9DlW0k">Sloth Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </nav>
+    <!--Input Area -->
+    <div class="container zone">
+        <div class="row my-4">
+            <div class="col-lg-8">
+                <img class="img-fluid rounded" src="assets/css/images/slothPic.jpg" width="100%" alt="">
+            </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-4 text">
+                <h1>ZOMG Sloths!</h1>
+                <p>Welcome to the only site you can search for sloths (or anything else, but seriously, why would you?) Click a type of sloth button or search for a new animal and click the button you've created! </p>
+                <form id="animal-form">
+                    <label for="animal-input">
+                        <div id="new">Enter a NEW animal </div>
+                    </label>
+                    <br>
+                    <input type="text" id="animal-input">
+                    <!-- Buttons -->
+                    <input id="add-animal" type="submit" value="Search">
+                </form>
+                <br>
+                <div id="buttons-view"></div>
+            </div>
+        </div>
     </div>
-    <!--
-      <img src="http://media1.giphy.com/media/3o85xkQpyMlnBkpB9C/200_s.gif" data-still="http://media1.giphy.com/media/3o85xkQpyMlnBkpB9C/200_s.gif" data-animate="http://media1.giphy.com/media/3o85xkQpyMlnBkpB9C/200.gif" data-state="still" class="gif">
-  <img src="http://media2.giphy.com/media/8rFQp4kHXJ0gU/200_s.gif" data-still="http://media2.giphy.com/media/8rFQp4kHXJ0gU/200_s.gif" data-animate="http://media2.giphy.com/media/8rFQp4kHXJ0gU/200.gif" data-state="still" class="gif">
-  <img src="http://media3.giphy.com/media/W6LbnBigDe4ZG/200_s.gif" data-still="http://media3.giphy.com/media/W6LbnBigDe4ZG/200_s.gif" data-animate="http://media3.giphy.com/media/W6LbnBigDe4ZG/200.gif" data-state="still" class="gif">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
--->
-
+    <!-- Content Row -->
+    <div class="row holder">
+        <div class="col-md-12 mb-4">
+            <div class="gifHolder"> <div class="header"></div>
+                <div id="animal-gifs"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <p class="m-0 footer text-center text-white">Copyright &copy; ZOMG Sloths 2017</p>
+    </div>
 </body>
 <footer>
-    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <!--Javascript Stylesheet -->
